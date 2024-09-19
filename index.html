@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <title>bootstrap first assignment </title>
+        <style>
+            @font-face {
+                font-family: 'calibri';
+                src: url("./font/CalibriRegular.ttf") format('ttf');
+            }
+            body{
+                font-family: 'calibri';
+            }
+            /* .neeraj-bdr{
+                border: 1px dashed #000;
+            } */
+            .n-cont{
+                min-height: 640px;    
+            }
+            .n-img{
+                width: 100px;
+            }
+            input[type="email"]:focus, input[type="password"]:focus, input[type="checkbox"]:focus{
+                box-shadow: none;
+            }
+            .n-col5-bg{
+                background-color: rgb(63, 1, 63)    ;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid n-cont p-0bg-primary">
+            <div class="row m-0 n-cont ">
+              <div class="col-7 p-0 bg-light ">
+                    <img src="./img/icon.jpg" class="n-img m-5 " alt="logo-icon">
+                    <div class=" offset-3 mt-5 w-50 text-center">
+                        <h1 class="fw-bold ">Welcome back !</h1>
+                        <p>Please login to your Ideal Insights account. </p>
+                    </div>
+                    <form class="mt-5 offset-3 w-50 text-start">
+                        <div class="mb-3">
+                         <input type="email" placeholder="Email ID" class="mb-3 rounded-0 border-0 border-bottom form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                         </div>
+                        <div class="mb-3">
+                         <input type="password" placeholder="Password"  class="mb-3  rounded-0 border-0 border-bottom form-control" id="exampleInputPassword1"> 
+                        </div>
+                        <div class="mb-3 form-check">
+                            <div class="row">
+                                <div class="col">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                                </div>
+                                <div class="col">
+                                    <a href="#">Forget Password &quest;</a>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn w-100 mt-1 mb-3 btn-warning">LOGIN</button>
+                        <div class="text-black">
+                            <a href="#" class="p-5 text-dark">Facing problem with login Contact Help Desk</a>
+                        </div>
+                    </form>
+              </div>
+              <div class="col-5 p-0 n-col5-bg">
+                  <div class="container-fluid h-50"></div>
+                  <div class="container-fluid h-50 text-center text-white">
+                      <h1 class="pb-3 fw-bold m-0">Hello, Friend!</h1>
+                      <p class="pb-5 m-0">Enter your details and <br> start journey with us.</p>
+                      <button type="button" class="btn ps-4 pe-4 border border-warning text-warning  ">SIGN UP</button> 
+                  </div>
+              </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
